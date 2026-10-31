@@ -5,6 +5,7 @@ from sqlalchemy.orm import Session
 from app.database import get_db
 from app.models import Card
 from app.schemas import CardResponse, CardCreateRequest
+from app.services.tcgdex_service import search_tcgdex_cards
 
 router = APIRouter(prefix="/cards", tags=["Cartas"])
 
